@@ -44,7 +44,7 @@ var callback = function(request,response){
         // Imagem Guilherme
     else if(parts.path == '/guilherme/imagem'){
             response.writeHead(200, {"Content-type":"image/png"});
-        readFile(response, 'guilherme.png')}
+        readFile(response, 'guilherme.jpg')}
 
         //Curriculo Guilherme
 
@@ -60,9 +60,9 @@ var callback = function(request,response){
     }
         // Imagem Michael
     else if(parts.path == '/michael/imagem'){
-            response.writeHead(200, {"Content-type":"image/png"});
+            response.writeHead(200, {"Content-type":"image/webp"});
 
-        readFile(response, 'michael.png')
+        readFile(response, 'michael.webp')
     }
         // Curriculo Michael
     else if(parts.path){
